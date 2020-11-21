@@ -1,7 +1,9 @@
-\documentclass[a4paper, ukrainian, utf8, simple]{eskdtext}
+\documentclass[a4paper, ukrainian, utf8, simple, hpadding=8mm]{eskdtext}
 \usepackage[T1,T2A]{fontenc}
 \usepackage{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{main.bib}
 
 
 
@@ -20,8 +22,11 @@
 
 \input{annotation.tex}
 
+\input{tz.tex}
+\newpage
 \tableofcontents
 \newpage
+\setcounter{page}{1}
 
 \section{Вступ}
 Появу комп'ютерних мереж можна розглядати як важливий крок у розвитку
@@ -43,6 +48,9 @@
 заданим типом мережі, щоб уникнути помилок та зайвих витрат. Проект має 
 досить гнучкі налаштування там зручний інтерфейс користувача. Для зменшення
 складності проекту, різноманіття фізичних параметрів апроксимується приблизним
-значенням. 
+значенням.
+\input{theory.tex}
 
+\newpage
+\printbibliography
 \end{document}
